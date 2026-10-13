@@ -7,7 +7,7 @@ Every episode plays inside SyriaFlix's own player and its own controls. Each epi
 - **Self-hosted:** an HLS stream (`.m3u8`) or an `.mp4`/`.webm` file on a video host such as Bunny Stream or Cloudflare Stream. Use this for episodes you own or have licensed.
 - **YouTube:** an official upload, played through the YouTube embed with YouTube's own controls turned off.
 
-The site itself is static HTML, so it can be hosted for free on Vercel, Netlify, Cloudflare Pages or GitHub Pages. Only the video host costs money.
+The site itself is static HTML, served on Railway by a tiny Node server (`scripts/serve.mjs`).
 
 ## Run it
 
@@ -15,10 +15,16 @@ The site itself is static HTML, so it can be hosted for free on Vercel, Netlify,
 npm install
 npm run dev        # http://localhost:3000 → redirects to /ar/
 npm run build      # validates the catalog, then writes the static site to ./out
-npm run preview    # serve ./out locally
+npm start          # serve ./out on $PORT (default 3000), the same way Railway does
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` (for example `https://syriaflix.org`) at build time so `sitemap.xml` has the right URLs.
+## Deploying on Railway
+
+`railway.json` pins the setup: build with `npm run build`, start with `npm start`, and health-check `/ar/`. Every push to the deployed branch redeploys.
+
+- `sitemap.xml` uses Railway's generated domain automatically.
+- If you add a custom domain, set the service variable `NEXT_PUBLIC_SITE_URL=https://your-domain` so the sitemap uses it.
+- A catalog error, such as a bad episode URL, fails the build, and the live site stays on the previous deploy.
 
 ## Pages
 

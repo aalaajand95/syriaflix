@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start": "node scripts/serve.mjs",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "validate": "node scripts/catalog.mjs validate",
     "validate:online": "node scripts/catalog.mjs validate --online",
     "import-playlist": "node scripts/catalog.mjs import",
     "prebuild": "node scripts/catalog.mjs validate",
-    "preview": "npx --yes serve@14 out",
     "add-video": "node scripts/catalog.mjs add-video"
   },
   "dependencies": {
@@ -30,5 +30,8 @@
     "eslint-config-next": "15.5.27",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
