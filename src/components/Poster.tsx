@@ -18,11 +18,14 @@ export default function Poster({
   title,
   image,
   className = "",
+  compact = false,
 }: {
   slug: string;
   title: Localized;
   image?: string;
   className?: string;
+  /** Small thumbnails: title only, smaller type. */
+  compact?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
   if (image && !failed) {
@@ -46,12 +49,17 @@ export default function Poster({
         background: `radial-gradient(circle at 30% 20%, hsl(${h} 55% 32%), hsl(${(h + 40) % 360} 45% 12%) 70%)`,
       }}
     >
-      <span lang="ar" className="text-2xl font-black leading-tight text-white drop-shadow sm:text-3xl">
+      <span
+        lang="ar"
+        className={`font-black leading-tight text-white drop-shadow ${compact ? "text-sm" : "text-2xl sm:text-3xl"}`}
+      >
         {title.ar}
       </span>
-      <span lang="en" className="mt-1 text-xs uppercase tracking-widest text-white/70">
-        {title.en}
-      </span>
+      {!compact && (
+        <span lang="en" className="mt-1 text-xs uppercase tracking-widest text-white/70">
+          {title.en}
+        </span>
+      )}
     </div>
   );
 }

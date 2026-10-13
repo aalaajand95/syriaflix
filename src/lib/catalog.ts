@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { episodeCount } from "./episodes";
+import { episodeCount, episodeThumbnail } from "./episodes";
 import type { Genre, Show } from "./types";
 
 export { episodeCount, firstEpisode } from "./episodes";
@@ -44,7 +44,7 @@ export function decades(): number[] {
 export function posterUrl(show: Show): string | undefined {
   if (show.poster) return show.poster;
   const first = show.seasons.find((s) => s.episodes.length)?.episodes[0];
-  return first ? `https://i.ytimg.com/vi/${first.youtubeId}/hqdefault.jpg` : undefined;
+  return first && episodeThumbnail(first);
 }
 
 /** Slim, serialisable version of a show for client components (search / browse). */

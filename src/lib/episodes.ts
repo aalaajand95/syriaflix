@@ -1,4 +1,4 @@
-import type { Season, Show } from "./types";
+import type { Episode, Season, Show } from "./types";
 
 type Ref = { season: number; episode: number };
 
@@ -32,4 +32,9 @@ export function previousEpisode(show: Show, season: number, episode: number): Re
   const flat = flatten(show);
   const i = flat.findIndex((x) => x.season === season && x.episode === episode);
   return i > 0 ? flat[i - 1] : undefined;
+}
+
+export function episodeThumbnail(episode: Episode): string | undefined {
+  if (episode.video) return episode.video.poster;
+  return episode.youtubeId ? `https://i.ytimg.com/vi/${episode.youtubeId}/hqdefault.jpg` : undefined;
 }

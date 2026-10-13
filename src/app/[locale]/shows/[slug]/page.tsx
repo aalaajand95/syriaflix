@@ -30,7 +30,6 @@ export default async function ShowPage({ params }: { params: Promise<Params> }) 
   if (!show) notFound();
   const t = getMessages(locale);
   const first = firstEpisode(show);
-  const youtubeSearch = `https://www.youtube.com/results?search_query=${encodeURIComponent(show.youtubeSearch)}`;
 
   const credit = (label: string, people: Localized[]) =>
     people.length > 0 && (
@@ -83,14 +82,6 @@ export default async function ShowPage({ params }: { params: Promise<Params> }) 
             ) : (
               <span className="rounded bg-surface-2 px-4 py-2 text-gold">{t.comingSoon}</span>
             )}
-            <a
-              href={youtubeSearch}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded bg-white/15 px-6 py-2 font-bold hover:bg-white/25"
-            >
-              {t.findOnYouTube} ↗
-            </a>
           </div>
           {!first && <p className="mt-3 text-sm text-muted">{t.comingSoonNote}</p>}
         </div>

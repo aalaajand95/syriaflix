@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import SeasonEpisodes from "./SeasonEpisodes";
-import YouTubePlayer from "./YouTubePlayer";
+import VideoPlayer from "./player/VideoPlayer";
 import { firstEpisode, getEpisode, nextEpisode, previousEpisode } from "@/lib/episodes";
 import { href, watchHref, type Messages } from "@/lib/i18n";
 import type { Locale, Show } from "@/lib/types";
@@ -34,9 +34,10 @@ export default function WatchClient({ show, locale, messages: t }: { show: Show;
   return (
     <div className="px-4 pt-4 sm:px-10">
       <div className="mx-auto max-w-6xl">
-        <YouTubePlayer
-          videoId={episode.youtubeId}
-          lang={locale}
+        <VideoPlayer
+          episode={episode}
+          locale={locale}
+          labels={{ ...t.player, nextEpisode: t.nextEpisode }}
           progress={{ slug: show.slug, season: season.number, episode: episode.number }}
           nextHref={next && link(next)}
         />

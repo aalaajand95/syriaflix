@@ -34,3 +34,34 @@ body {
   outline: 2px solid var(--color-gold);
   outline-offset: 2px;
 }
+
+/* Player sliders: filled track up to --progress. */
+.player-range {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    var(--color-accent) var(--progress, 0%),
+    rgb(255 255 255 / 0.3) var(--progress, 0%)
+  );
+}
+.player-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  border: 0;
+}
+.player-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  border: 0;
+}
+.player-range:disabled {
+  cursor: default;
+  opacity: 0.5;
+}

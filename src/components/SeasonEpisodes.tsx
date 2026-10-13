@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Poster from "./Poster";
 import { useState } from "react";
+import { episodeThumbnail } from "@/lib/episodes";
 import { watchHref } from "@/lib/i18n";
 import type { Locale, Show } from "@/lib/types";
 
@@ -54,14 +56,15 @@ export default function SeasonEpisodes({
                   active ? "bg-accent/30 ring-1 ring-accent" : "bg-surface hover:bg-surface-2"
                 }`}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`https://i.ytimg.com/vi/${e.youtubeId}/mqdefault.jpg`}
-                  alt=""
-                  loading="lazy"
-                  className="aspect-video w-28 shrink-0 rounded object-cover"
-                />
-                <span className="text-sm">
+                <div className="w-28 shrink-0 overflow-hidden rounded">
+                  <Poster
+                    slug={`${show.slug}-${season.number}-${e.number}`}
+                    title={show.title}
+                    image={episodeThumbnail(e)}
+                    compact
+                  />
+                </div>
+                <span className="min-w-0 text-sm">
                   <span className="block font-bold">
                     {labels.episode} {e.number}
                   </span>
