@@ -1,0 +1,16 @@
+{
+  "slug": "sah-al-nom",
+  "title": { "ar": "صح النوم", "en": "Sah al-Nom" },
+  "synopsis": {
+    "ar": "الكوميديا الكلاسيكية الشهيرة عن غوار الطوشة وحسني البورظان وفندق صح النوم.",
+    "en": "The classic comedy of Ghawar al-Toushe, Husni al-Borazan and the Sah al-Nom hotel."
+  },
+  "year": 1972,
+  "genres": ["comedy", "classic"],
+  "cast": [
+    { "ar": "دريد لحام", "en": "Duraid Lahham" },
+    { "ar": "نهاد قلعي", "en": "Nihad Qalai" }
+  ],
+  "youtubeSearch": "صح النوم دريد لحام الحلقة 1",
+  "seasons": []
+}

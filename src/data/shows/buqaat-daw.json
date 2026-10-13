@@ -1,0 +1,17 @@
+{
+  "slug": "buqaat-daw",
+  "title": { "ar": "بقعة ضوء", "en": "Buq'at Daw' (Spotlight)" },
+  "synopsis": {
+    "ar": "سلسلة لوحات كوميدية ناقدة تسلط الضوء على هموم المجتمع السوري اليومية بجرأة وسخرية.",
+    "en": "A sketch-comedy series that satirises everyday Syrian social and political life with bold, sharp humour."
+  },
+  "year": 2001,
+  "genres": ["comedy", "social"],
+  "director": { "ar": "الليث حجو", "en": "Al-Laith Hajjo" },
+  "cast": [
+    { "ar": "أيمن رضا", "en": "Ayman Rida" },
+    { "ar": "باسم ياخور", "en": "Bassem Yakhour" }
+  ],
+  "youtubeSearch": "بقعة ضوء الجزء الأول",
+  "seasons": []
+}

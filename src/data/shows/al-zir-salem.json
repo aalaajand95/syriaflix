@@ -1,0 +1,18 @@
+{
+  "slug": "al-zir-salem",
+  "title": { "ar": "الزير سالم", "en": "Al-Zir Salem" },
+  "synopsis": {
+    "ar": "سيرة المهلهل بن ربيعة وحرب البسوس التي دامت أربعين عاماً بين قبيلتي بكر وتغلب.",
+    "en": "The legend of al-Muhalhil and the forty-year War of Basus between the tribes of Bakr and Taghlib."
+  },
+  "year": 2000,
+  "genres": ["historical", "bedouin"],
+  "director": { "ar": "حاتم علي", "en": "Hatem Ali" },
+  "writer": { "ar": "ممدوح عدوان", "en": "Mamdouh Adwan" },
+  "cast": [
+    { "ar": "سلوم حداد", "en": "Salloum Haddad" },
+    { "ar": "عابد فهد", "en": "Abed Fahd" }
+  ],
+  "youtubeSearch": "الزير سالم الحلقة 1",
+  "seasons": []
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "sakr-quraish",
+  "title": { "ar": "صقر قريش", "en": "Sakr Quraish" },
+  "synopsis": {
+    "ar": "رحلة عبد الرحمن الداخل من سقوط الدولة الأموية في دمشق إلى تأسيس دولتها في الأندلس.",
+    "en": "Abd al-Rahman I's journey from the fall of the Umayyads in Damascus to founding their state in al-Andalus."
+  },
+  "year": 2002,
+  "genres": ["historical"],
+  "director": { "ar": "حاتم علي", "en": "Hatem Ali" },
+  "writer": { "ar": "وليد سيف", "en": "Walid Saif" },
+  "cast": [{ "ar": "جمال سليمان", "en": "Jamal Suliman" }],
+  "youtubeSearch": "صقر قريش الحلقة 1",
+  "seasons": []
+}

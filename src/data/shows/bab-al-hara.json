@@ -1,0 +1,18 @@
+{
+  "slug": "bab-al-hara",
+  "title": { "ar": "باب الحارة", "en": "Bab al-Hara" },
+  "synopsis": {
+    "ar": "ملحمة شامية تدور في إحدى حارات دمشق القديمة زمن الانتداب الفرنسي، ترصد حياة أهلها وعاداتهم وتكاتفهم في وجه المحتل.",
+    "en": "A Damascene saga set in an old-city neighbourhood during the French Mandate, following its families, customs and their solidarity against the occupation."
+  },
+  "year": 2006,
+  "genres": ["shami", "drama"],
+  "director": { "ar": "بسام الملا", "en": "Bassam al-Mulla" },
+  "cast": [
+    { "ar": "عباس النوري", "en": "Abbas al-Nouri" },
+    { "ar": "سامر المصري", "en": "Samer al-Masri" }
+  ],
+  "youtubeSearch": "باب الحارة الجزء الأول الحلقة 1",
+  "featured": true,
+  "seasons": []
+}

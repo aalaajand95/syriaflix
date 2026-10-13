@@ -1,0 +1,20 @@
+{
+  "slug": "diaa-dayaa",
+  "title": { "ar": "ضيعة ضايعة", "en": "Diaa Dayaa" },
+  "synopsis": {
+    "ar": "كوميديا ريفية عن قرية «أم الطنافس» المنسية على الساحل السوري ومغامرات جودة وأسعد اليومية.",
+    "en": "Rural comedy about Umm al-Tanafes, a forgotten village on the Syrian coast, and the everyday misadventures of Joudeh and Asaad."
+  },
+  "year": 2008,
+  "endYear": 2010,
+  "genres": ["comedy"],
+  "director": { "ar": "الليث حجو", "en": "Al-Laith Hajjo" },
+  "writer": { "ar": "ممدوح حمادة", "en": "Mamdouh Hamada" },
+  "cast": [
+    { "ar": "نضال سيجري", "en": "Nidal Sijri" },
+    { "ar": "باسم ياخور", "en": "Bassem Yakhour" }
+  ],
+  "youtubeSearch": "ضيعة ضايعة الحلقة 1",
+  "featured": true,
+  "seasons": []
+}

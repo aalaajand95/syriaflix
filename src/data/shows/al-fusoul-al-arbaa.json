@@ -1,0 +1,18 @@
+{
+  "slug": "al-fusoul-al-arbaa",
+  "title": { "ar": "الفصول الأربعة", "en": "The Four Seasons" },
+  "synopsis": {
+    "ar": "حكايات عائلة دمشقية كبيرة؛ أب وأم وبناتهم وأزواجهن، في كوميديا اجتماعية دافئة.",
+    "en": "Warm social comedy about a large Damascene family — parents, their daughters and their husbands."
+  },
+  "year": 1999,
+  "endYear": 2002,
+  "genres": ["social", "comedy"],
+  "director": { "ar": "حاتم علي", "en": "Hatem Ali" },
+  "cast": [
+    { "ar": "خالد تاجا", "en": "Khaled Taja" },
+    { "ar": "بسام كوسا", "en": "Bassam Kousa" }
+  ],
+  "youtubeSearch": "الفصول الأربعة الحلقة 1",
+  "seasons": []
+}

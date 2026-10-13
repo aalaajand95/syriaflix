@@ -1,0 +1,15 @@
+{
+  "slug": "al-khirbeh",
+  "title": { "ar": "الخربة", "en": "Al-Khirbeh" },
+  "synopsis": {
+    "ar": "كوميديا عن صراع عائلتين قديم في قرية سورية صغيرة، بلهجة سويداء محببة.",
+    "en": "Comedy about an old rivalry between two families in a small Syrian village, spoken in the beloved Suwayda dialect."
+  },
+  "year": 2011,
+  "genres": ["comedy"],
+  "director": { "ar": "الليث حجو", "en": "Al-Laith Hajjo" },
+  "writer": { "ar": "ممدوح حمادة", "en": "Mamdouh Hamada" },
+  "cast": [{ "ar": "دريد لحام", "en": "Duraid Lahham" }],
+  "youtubeSearch": "مسلسل الخربة الحلقة 1",
+  "seasons": []
+}

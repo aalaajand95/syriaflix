@@ -1,0 +1,20 @@
+{
+  "slug": "al-taghriba-al-filistiniya",
+  "title": { "ar": "التغريبة الفلسطينية", "en": "The Palestinian Exodus" },
+  "synopsis": {
+    "ar": "تتبع عائلة فلسطينية ريفية عبر عقود من الثورة والنكبة واللجوء، في واحد من أهم أعمال الدراما العربية.",
+    "en": "A rural Palestinian family across decades of revolt, the Nakba and exile — one of the landmark works of Arab television drama."
+  },
+  "year": 2004,
+  "genres": ["historical", "drama"],
+  "director": { "ar": "حاتم علي", "en": "Hatem Ali" },
+  "writer": { "ar": "وليد سيف", "en": "Walid Saif" },
+  "cast": [
+    { "ar": "جمال سليمان", "en": "Jamal Suliman" },
+    { "ar": "تيم حسن", "en": "Taim Hasan" },
+    { "ar": "خالد تاجا", "en": "Khaled Taja" }
+  ],
+  "youtubeSearch": "التغريبة الفلسطينية الحلقة 1",
+  "featured": true,
+  "seasons": []
+}
